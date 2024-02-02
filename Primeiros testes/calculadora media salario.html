@@ -1,0 +1,25 @@
+<meta charset="UTF-8">
+<script>
+function pulalinha() {
+        document.write("<br><br>");
+    }
+
+    function exibir(texto) {
+        document.write(texto);
+        pulalinha()
+    }
+    var totalFuncionarios = parseInt(prompt("Quantos funcionarios você tem?"));
+    var totalSalario = 0;
+    var pergunta = 1;
+    while(pergunta <= totalFuncionarios) {
+        var salario = parseInt(prompt("Qual o salario desse funcionario?"));
+        totalSalario = totalSalario + salario;
+        pergunta++;
+    }
+    var mediaSalario = totalSalario / totalFuncionarios;
+    exibir("A média dos salários são de " + Math.round(mediaSalario));
+
+    exibir("FIM.");
+
+        
+</script>

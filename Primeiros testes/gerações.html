@@ -1,0 +1,21 @@
+<meta charset="UTF-8">
+
+<script>
+    function pulalinha() {
+        document.write("<br><br>");
+    }
+    
+    function mostra(frase) {
+        document.write(frase);
+        pulalinha();
+    }
+    
+    var chegada = 1500;
+    var anoAtual = 2020;
+    var idadeMedia = 28;
+    var geracoes = (anoAtual - chegada)/idadeMedia;
+
+    mostra("<h1>Gerações Brasileiras</h1>");
+    mostra("já se passaram " + Math.round(geracoes) + " aqui no Brasil desda chegada dos portugueses.");
+
+</script>

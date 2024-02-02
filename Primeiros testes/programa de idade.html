@@ -1,0 +1,23 @@
+<meta charset="UTF-8">
+
+<script>
+
+function pulodelinha() {
+    document.write("<br><br>");
+}
+
+function exibir(frase) {
+    document.write(frase);
+}
+
+function calculaAno(ano, anoUsuario) {
+    return ano - anoUsuario;
+}
+ var anoAtual = 2022
+ var nome = prompt("Qual é seu nome?");
+ var anoPessoa = prompt("Em qual ano que você nasceu?");
+ var idade = calculaAno (anoAtual, anoPessoa);
+
+ exibir("A sua idade é " + idade + ".");
+
+</script>

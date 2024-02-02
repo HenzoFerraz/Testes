@@ -1,0 +1,38 @@
+<meta charset="UTF-8">
+
+<script>
+
+function pulodelinha() {
+    document.write("<br><br>");
+}
+
+function exibir(frase) {
+    document.write(frase);
+    pulodelinha();
+}
+
+function calculaImc(altura, peso) {
+    return peso / (altura * altura);
+}
+
+ var nome = prompt("Qual é seu nome?");
+ var alturaUsuario = prompt("Qual é sua altura " + nome + "?");
+ var pesoUsuario = prompt("Qual é seu peso " + nome + "?");
+ 
+ var imc = calculaImc(alturaUsuario, pesoUsuario);
+
+ exibir(nome + ", O seu IMC é " + Math.round(imc) + ".");
+
+ if(imc < 18.5) {
+    exibir("Seu IMC está baixo, coma uma coxinha.");
+ }
+
+ if(imc > 35) {
+    exibir("Seu IMC está acima do recomendado.");
+ }
+
+ if(imc >= 18.5 && imc <= 35) {
+    exibir("Seu IMC está excelente, pode comer de boa.");
+ }
+
+</script>
